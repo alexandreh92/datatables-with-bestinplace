@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customers</h1>
+
+<table id="customers-datatable" data-source="<%= customers_path(format: :json) %>">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer', new_customer_path %>
